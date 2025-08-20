@@ -1,0 +1,11 @@
+[build]
+  command = "npm run build" # or your actual build command
+  publish = "dist" # or your actual build output directory (could be "build" for React)
+
+[build.environment]
+  VITE_API_URL = "https://ecom-production-fcce.up.railway.app"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
